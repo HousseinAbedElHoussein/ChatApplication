@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="603dp"
+        android:layout_marginBottom="5dp"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <ListView
+            android:id="@+id/ListViewchat"
+            android:layout_width="397dp"
+            android:layout_height="468dp"
+            android:layout_weight="0.11"
+            android:padding="10dp"
+            android:scaleType="fitXY"
+
+            />
+
+        <EditText
+            android:id="@+id/Message"
+            android:layout_width="281dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/ListViewchat"
+            android:layout_marginTop="472dp"
+            android:ems="10"
+            android:hint="Type a message"
+            android:inputType="textPersonName"
+            android:text="" />
+
+        <Button
+            android:id="@+id/Send"
+            android:layout_width="77dp"
+            android:layout_height="45dp"
+            android:layout_alignTop="@id/ListViewchat"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="470dp"
+            android:layout_toEndOf="@+id/Message"
+            android:layout_toRightOf="@+id/Message"
+            android:text="Send" />
+
+    </RelativeLayout>
+
+</LinearLayout>
